@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Martin Aguirre</title>
+</head>
+<body>
+ <header>
+    <div>
+        <a href="index.html">
+            <img class="logo" src="assets/img/logo_provisorio.jpg" alt="Logo">
+        </a> 
+     </div>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./branding.html">Branding</a></li>
+            <li><a href="./dis_grafico.html">Diseño Gráfico</a></li>
+            <li><a href="./ilustracion.html">Ilustración</a></li>
+            <li><a href="./sobre_mi.html">Sobre mí</a></li>
+            <li id="header__contacto__active"><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <img src="./assets/img/iconos/burger-solid.svg" alt="menu hamburguesa" id="burger__icon">
+ </header>
+
+ <!--EMPIEZA EL CONTENIDO-->
+<main class="contact__main">
+
+    <form action="#" class="form" method="get">
+
+        <section class="form__s1">
+            <h1 class="form__h1">INFORMACIÓN DE CONTACTO</h1>
+            <hr>
+            <p class="form__p">Si te gustaría conocerme, hablar sobre algún proyecto, o hacerme alguna pregunta, sentite libre de contactarme por las redes sociales, o por este formulario.</p>
+        </section>
+        
+        <section class="form__s2">
+            <input type="text" id="name" name="user_name" class="form__name"  placeholder="Nombre" required>
+    
+            <input type="text" id="apellido" name="user_apellido" class="form__apellido"  placeholder="Apellido" required>
+    
+        </section>
+    
+        <section class="form__s3">
+
+            <input type="email" id="mail" name="user_mail" class="form__email" placeholder="Tu e-mail" required>
+        
+            <input type="text" id="numero-celular" name="user_celular" class="form__celular" placeholder="Número de celular">
+        </section>
+    
+        <section class="form__s4">
+
+            <textarea id="msg" name="user_msg" class="form__msg" placeholder="Por qué me querés contactar"></textarea>
+    
+        </section>
+      
+        <section class="form__s5">
+            <input type="submit" id="enviar" name="user_enviar" value="CONTACTAR" class="form__enviar">
+        </section>
+        
+    
+    </form>
+
+    <section class="contact__main__contactos">
+        
+        <div class="contact__main__contactos__div">
+            <a href="https://www.instagram.com/martinnnaguirre/" target="_blank">
+                <img src="assets/img/iconos/instagram-brands.svg" alt="instagram"></a>
+        </div>
+
+        <div class="contact__main__contactos__div">
+            <a href="https://www.linkedin.com/in/martin-aguirre-a9a047198" target="_blank">
+                <img src="assets/img/iconos/linkedin-in-brands.svg" alt="linkedin"></a>
+        </div>
+
+        <div class="contact__main__contactos__div">
+            <a href="https://api.whatsapp.com/send/?phone=541121902602&text&app_absent=0" target="_blank">
+                <img src="assets/img/iconos/whatsapp-brands.svg" alt="whatsapp"></a>
+        </div>
+       
+    </section>
+
+</main>
+    
+ 
+ 
+ 
+
+<!--Termina el contenido-->
+
+<footer>
+    <div class="footer__div">
+
+        <div class="footer__div__izq">
+          <h4>¡Gracias por visitar esta página!</h4>
+          <p>Podes contactarme en las siguientes redes sociales, o por mi mail:
+            <br>
+            jmartinaguirre79@gmail.com
+          </p>
+           <br>
+           <hr>
+           <br>
+          <div class="footer__div__izq__iconos">
+           <a href="https://www.instagram.com/martinnnaguirre/" target="_blank"><img src="assets/img/iconos/instagram-brands.svg" alt="instagram"></a>
+           <a href="https://api.whatsapp.com/send/?phone=541121902602&text&app_absent=0" target="_blank"><img src="assets/img/iconos/whatsapp-brands.svg" alt="whatsapp"></a>
+           <a href="https://www.linkedin.com/in/martin-aguirre-a9a047198" target="_blank"><img src="assets/img/iconos/linkedin-in-brands.svg" alt="linkedin"></a>
+        </div>
+
+        </div>
+
+        <div class="footer__div__der">
+            <a href="./index.html"><img class="footer__div__der__logo" src="assets/img/logo_provisorio.jpg" alt="Logo"></a>
+        </div>
+        
+    </div>
+   </footer>
+
+</body>
+</html>
