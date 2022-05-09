@@ -18,11 +18,8 @@ html{
     font-size: 14px;
     scroll-behavior: smooth;
 }
-
-.logo{
-    width: 100px;
-
-}
+body{display: grid;}
+.logo{width: 100px;}
 
 /*HEADER*/
 
@@ -33,13 +30,12 @@ header{
     background: #F2F2F2;
     margin-top: 0px;
     padding: 1% 20%;
-    margin: auto;
 
 }
 
 header nav{
     display: inline-block;
-    width:75%;
+    width:85%;
     flex-wrap: nowrap;
 }
 
@@ -74,9 +70,6 @@ header ul li a{
     height: 0px;
 }
 
-
-
-
 /*TITULOS*/
 
 h1,h2,h3,h4{
@@ -84,7 +77,7 @@ h1,h2,h3,h4{
     font-weight: 700;
 }
 
-/*footer*/
+/*FOOTER*/
 footer{
     padding: 1% 20%;
     background-color: #0d0d0d;
@@ -127,8 +120,26 @@ footer{
 
 /*INDEX*/
 
-/*INDEX PRESENTACIÓN*/
+#index_body{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+    "header header header header"
+    "present present present present"
+    "separador separador separador separador"
+    "parallax parallax parallax parallax"
+    "foot foot foot foot"
+    ;
+}
 
+header{grid-area: header;}
+.main__presentacion{grid-area: present;}
+.divisor{grid-area: separador;}
+.parallax{grid-area: parallax;}
+footer{grid-area: foot;}
+
+
+/*INDEX PRESENTACIÓN*/
 .main__presentacion{
     max-width: 60%;
     height: 90vh;
@@ -180,11 +191,8 @@ button{
 
 }
 
-/*Titulos*/
-
-h1{
-    font-size: 9rem;
-}
+/*Titulos index*/
+h1{font-size: 9rem;}
 
 .divisor h2{
     font-size: 6rem;
@@ -194,7 +202,6 @@ h1{
 }
 
 /*Sección: Qué vas a encontrar*/
-
 .parallax{
     color: #F2F2F2;
     text-shadow: #0d0d0d 0.1em 0.1em 0.5em;
@@ -209,7 +216,7 @@ h1{
 .parallax__section{
     margin: 0%;
     padding: 15% 20%;
-    height: 100%;
+    max-height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -224,6 +231,19 @@ h1{
 
 
 /*BRANDING*/
+
+#branding_body{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "header header header header"
+    "brand brand brand brand"
+    "foot foot foot foot";
+}
+header{grid-area: header;}
+.brand{grid-area: brand;}
+footer{grid-area: foot;}
+
 
 .brand{
     padding: 0% 20%;
@@ -264,6 +284,22 @@ h1{
     align-content: space-around;
 }
 
+/*grid para proyectos*/
+
+.branding_proyectos_body{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "header header header header"
+    "brand brand brand brand"
+    "branding branding branding branding"
+    "foot foot foot foot";
+}
+header{grid-area: header;}
+.branding__presentacion{grid-area: brand;}
+.branding{grid-area: branding;}
+footer{grid-area: foot;}
+
 /*BRANDING>CUCU PIPI*/
 
 .branding__presentacion h1, h2{
@@ -283,6 +319,7 @@ h1{
     justify-content: center;
     align-content: center;
     margin: auto;
+    height: 100%;
 }
 
 .branding{
@@ -307,7 +344,6 @@ h1{
     padding-top: 2%;
 }
 .branding__proceso__inicio {font-size: 1.5rem; font-weight: 500;}
-
 
 .branding__proceso ul{
     list-style: none;
@@ -371,6 +407,7 @@ h1{
 
 /*BRANDING>DATAPHONE*/
 
+
 #branding__presentacion__div__data{
     background-color: #E5FFFF;
 }
@@ -382,9 +419,6 @@ h1{
 #data-c3{background-color: #B20209; color: #F2F2F2}
 #data-c4{background-color: #02B2AC;}
 #data-c5{background-color: #E5FFFF;}
-
-
-
 
 
 /*BRANDING>PATOS DE CANELA*/
@@ -416,7 +450,23 @@ h1{
 
 
 
+
+
 /*DISEÑO*/
+
+#dis_body{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "header header header header"
+    "acor acor acor acor"
+    "foot foot foot foot";
+}
+
+header{grid-area: header;}
+.acordeon__main{grid-area: acor;}
+footer{grid-area: foot;}
+
 
 details summary{cursor: pointer;} /*El cursor se hace pointer para el bg también :) */
 details summary>*{display: inline;}/*Hace que la flechita de desplegamiento y el texto queden en la misma linea */
@@ -563,6 +613,21 @@ details[open] summary::before{
 
 
 /*ILUSTRACION*/
+
+#ilus_body{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "header header header header"
+    "mi mi mi mi"
+    "foot foot foot foot";
+}
+
+header{grid-area: header;}
+.ilust__main{grid-area: mi;}
+footer{grid-area: foot;}
+
+
 .ilust__main{
     padding: 0% 20%;
     margin-bottom: 15%;
@@ -612,6 +677,20 @@ details[open] summary::before{
 }
 
 /*SOBRE MI*/
+
+#sobre_mi_body{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "header header header header"
+    "mi mi mi mi"
+    "foot foot foot foot";
+}
+
+header{grid-area: header;}
+.mi{grid-area: mi;}
+footer{grid-area: foot;}
+
 
 .mi{
     padding: 0% 20%;
@@ -664,6 +743,21 @@ details[open] summary::before{
 
 
 /*CONTACTOS*/
+
+#contacto_body{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "header header header header"
+    "contact contact contact contact"
+    "foot foot foot foot";
+}
+
+header{grid-area: header;}
+.contact__main{grid-area: contact;}
+footer{grid-area: foot;}
+
+
 
 .contact__main{
     padding: 5% 20%;
@@ -767,9 +861,6 @@ details[open] summary::before{
     transform: scale(1.2);
 }
 
-
-
-
 .contact__main__contactos{
     display: flex;
     width: auto;
@@ -790,5 +881,43 @@ details[open] summary::before{
     top: 7%;
     filter: invert();
 }
+
+
+/*ESTRUCTURA CON GRIDS EN MEDIA QUERY*/
+
+/*TABLET*/
+
+
+
+/*index*/
+
+
+/*branding*/
+/*branding-dataphone*/
+/*branding-cucu*/
+/*branding-patos*/
+
+
+/*diseño*/
+
+/*ilust*/
+
+/*sobre mi*/
+
+/*contacto*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
