@@ -232,9 +232,9 @@ h1{font-size: 9rem;}
     background-size: cover;
 }
 
-.parallax__section__branding{background-image: url(assets/img/parallax_branding.jpg);}
-.parallax__section__dis{background-image: url(assets/img/parallax_diseño_grafico.jpg);}
-.parallax__section__ilus{background-image: url(assets/img/parallax_ilustracion.jpg);}
+.parallax__section__branding{background-image: url(../assets/img/parallax_branding.jpg);}
+.parallax__section__dis{background-image: url(../assets/img/parallax_diseño_grafico.jpg);}
+.parallax__section__ilus{background-image: url(../assets/img/parallax_ilustracion.jpg);}
 
 
 
@@ -644,10 +644,8 @@ footer{grid-area: foot;}
 
 .ilust__main h1{
     margin: 2% 2%;
-    font-size: 4rem;
+    font-size: 5rem;
     color: #1ed974;
-    font-family:'Poppins', sans-serif;
-    font-weight: 600;
 }
 
 .ilust__main__section{
@@ -717,7 +715,7 @@ footer{grid-area: foot;}
     background-repeat: no-repeat;
     background-size: cover;
 }
-.mi__main__img{background-image: url(./assets/img/foto_cv_blanco_negro.png);}
+.mi__main__img{background-image: url(../assets/img/foto_cv_blanco_negro.png);}
 
 .mi__main__titulo{
     color: #d9c61e;
