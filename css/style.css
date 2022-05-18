@@ -13,12 +13,11 @@ font-family: 'Poppins', sans-serif;
 }
 
 html{
-    background-color: #F2F2F2;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     scroll-behavior: smooth;
 }
-body{display: grid;}
+body{display: grid;background-color: #F2F2F2;}
 .logo{width: 100px;}
 
 /*HEADER*/
@@ -197,7 +196,6 @@ button{
 }
 .main__presentacion_div_flecha a:hover{
     filter:opacity(50%)
-
 }
 
 /*Titulos index*/
@@ -208,6 +206,7 @@ h1{font-size: 9rem;}
     color: #F2F2F2;
     background-color: #0d0d0d;
     padding: 5% 20%;
+    margin: 0%;
 }
 
 /*Sección: Qué vas a encontrar*/
@@ -215,7 +214,15 @@ h1{font-size: 9rem;}
     color: #F2F2F2;
     text-shadow: #0d0d0d 0.1em 0.1em 0.5em;
 }
-.parallax a{color: #F2F2F2;}
+.parallax a{
+    color: #F2F2F2;
+    width: 150px;
+    height: 50px;
+    padding: 14px 14px;
+    font-size: 22px;
+    text-decoration: none;
+}
+
 .parallax__section h3{
     font-size: 6rem;
     color: #F2F2F2;
@@ -270,12 +277,7 @@ footer{grid-area: foot;}
     font-size: 2rem;
     margin-bottom: 5%;
 }
-.brand section a{
-    text-decoration: none;
-    color: #921ed9;
-    font-size: 1rem;
-    font-weight: 500;
-}
+
 .brand section{
     margin: 5% 0;
     display: flex;
@@ -387,7 +389,7 @@ footer{grid-area: foot;}
     padding: 5% 5%;
 }
 
-.branding__mockups{
+.branding__mockups__div{
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-areas: 
@@ -528,7 +530,7 @@ summary::before{
     width: 2rem;
     height: 2rem;
     content: "";
-    background-image:url(./assets/img/iconos/angle-right-solid.svg);
+    background-image:url(../assets/img/iconos/angle-right-solid.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size:contain;
@@ -539,7 +541,7 @@ summary::before{
 
 details[open] summary::before{
     content: "";
-    background-image:url(./assets/img/iconos/angle-down-solid.svg);
+    background-image:url(../assets/img/iconos/angle-down-solid.svg);
 }
 
 /*diseno>elvis*/
@@ -890,8 +892,128 @@ footer{grid-area: foot;}
 }
 
 
-/*ESTRUCTURA CON GRIDS EN MEDIA QUERY*/
 
+/*ANIMACIONES*/
+
+/*ANIMACIONES>INDEX*/
+
+.parallax__button{
+    width: 140px;
+    height: 45px;
+    padding: 0%;
+    font-size: 23px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+.parallax__button::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #F2F2F2;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.parallax__button:hover::before {width: 100%;}
+.parallax__button:hover>a{color: #0d0d0d;text-decoration-color: #0d0d0d;transition: all 0.5s;font-weight: 600;}
+.parallax__button:active:before {background: #b9b9b9;}
+
+/*ANIMACIONES>BRANDING*/
+
+.brand section a{
+    text-decoration: none;
+    color: #921ed9;
+    padding: auto;
+    width: 130px;
+    height: 50px;
+    padding: 14px 0x;
+    font-size: 22px;
+}
+
+.button_branding{
+    width: 130px;
+    height: 50px;
+    font-size: 22px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #921ed9;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+   }
+
+.button_branding::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 3px;
+    background-color: #921ed9;
+    z-index: -1;
+    transition: all 0.5s;
+   }
+   
+.button_branding:hover::before {width: 100%;}
+   
+#button_branding_ajuste{width: 200px;}
+
+/*ANIMACIONES>ILUSTRACION*/
+
+.ilust__main__section__div{
+	display: block;
+	position: relative;
+    background-color: #1ed974;
+    overflow: hidden;
+}
+
+.ilust__img__txt{
+    width: 100%;
+	height: 100%;
+	position: absolute;
+    top: 0;
+	left: 0;
+    
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+    color: #F2F2F2;
+    font-weight: 600;
+    font-size: 1.5rem;
+    opacity: 0%;
+}
+
+.ilust__img__txt h5{font-size: 2rem; font-family: 'Oswald', sans-serif;}
+.ilust__img__txt p{
+    padding: 0% 5%;
+    text-align: center;
+}
+
+.ilust__main__section__div:hover>img{
+    opacity: 35%;
+    transform: scale(1.2);
+    filter: grayscale(100%);
+    transition: all 1s ease-in-out;
+}
+.ilust__img__txt:hover{
+    opacity: 100%;
+    transition: all 1s;
+}
+
+
+/*ESTRUCTURA CON GRIDS EN MEDIA QUERY*/
 
 
 /*TABLET*/
@@ -971,9 +1093,6 @@ footer{grid-area: foot;}
 }
 
 
-
-
-
 /*MOBILE*/
 @media screen and (max-width: 600px){
     html{font-size: 10px;}
@@ -1017,6 +1136,8 @@ footer{grid-area: foot;}
     .branding__proceso h4 {font-size: 3rem;}
     .branding section li, .branding section p{font-size: 1.5rem;}
     .ver__mas__branding, .ver__mas__branding a{padding: 0%;font-size: 1.5rem;}
+    .branding__mockups__div{display: block;}
+    .branding__mockups__div img{margin-bottom: 2%;}
      
 
     /*diseño*/
