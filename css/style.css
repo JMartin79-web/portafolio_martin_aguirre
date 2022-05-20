@@ -41,6 +41,15 @@ body{display: grid;background-color: #F2F2F2;}
     --bs-btn-disabled-border-color: none;
 }
 
+#sidebar{
+    background-color: #F2F2F2; 
+}
+
+#sidebar a{
+    display: inline;
+    font-size: 1.5rem;
+}
+
 /*HEADER*/
 
 header{
@@ -92,6 +101,8 @@ header ul li a{
 
 /*HEADER>icono activo*/
 header img a {color: #D91E1E;}
+
+
 
 
 /*TITULOS*/
@@ -1102,6 +1113,7 @@ footer{grid-area: foot;}
 /*MOBILE-TABLET*/
 
 @media screen and (max-width: 768px){
+    html{font-size: 12px;}
 
     /*index*/
     h1{font-size: 6rem; margin: auto;}

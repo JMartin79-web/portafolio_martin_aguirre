@@ -31,7 +31,38 @@
         </ul>
     </nav>
 
-    <img src="./assets/img/iconos/burger-solid.svg" alt="menu hamburguesa" id="burger__icon">
+    <!-- menu desplegable offcanvas -->
+
+        <a href="#sidebar" id="btn-primary__modificado" class="btn btn-primary d-block p-3" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvas-controls">
+            <img src="./assets/img/iconos/burger-solid.svg" alt="menu hamburguesa" id="burger__icon" id="burger__index-active">
+         </a>
+
+
+    <!-- offcanvas -->
+
+    <div id="sidebar" class="offcanvas offcanvas-end" tabindex="-1"
+    aria-labelledby="offcanvas-label">
+        <div class="offcanvas-header" id="offcanvas-label">
+            
+            <h3 class="offcanvas-title">Martín J. Aguirre</h3>
+            <button type="button" class="btn-close p-3 m-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <ul class="navbar-nav d-flex align-items-start">
+                <li class="p-3"><a href="./index.html">Home</a></li>
+                <li class="p-3 d-inline" id="header__active__branding"><a href="./branding.html">Branding</a></li>
+                <li class="p-3 d-inline"><a href="./dis_grafico.html">Diseño Gráfico</a></li>
+                <li class="p-3 d-inline"><a href="./ilustracion.html">Ilustración</a></li>
+                <li class="p-3 d-inline"><a href="./sobre_mi.html">Sobre mí</a></li>
+                <li class="p-3 d-inline"><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- fin del menu desplegable offcanvas -->
+
  </header>
  
  <!--EMPIEZA EL CONTENIDO-->
@@ -126,6 +157,9 @@
         
     </div>
    </footer>
+
+<!-- script Bootstrap -->
+<script type = "text/javascript" src="./js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

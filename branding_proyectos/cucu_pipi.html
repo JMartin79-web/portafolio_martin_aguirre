@@ -31,7 +31,38 @@
         </ul>
     </nav>
 
-    <img src="../assets/img/iconos/burger-solid.svg" alt="menu hamburguesa" id="burger__icon">
+
+    <!-- menu desplegable offcanvas -->
+
+    <a href="#sidebar" id="btn-primary__modificado" class="btn btn-primary d-block p-3" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvas-controls">
+        <img src="../assets/img/iconos/burger-solid.svg" alt="menu hamburguesa" id="burger__icon" id="burger__index-active">
+     </a>
+
+
+    <!-- offcanvas -->
+
+    <div id="sidebar" class="offcanvas offcanvas-end" tabindex="-1"
+    aria-labelledby="offcanvas-label">
+        <div class="offcanvas-header" id="offcanvas-label">
+            
+            <h3 class="offcanvas-title">Martín J. Aguirre</h3>
+            <button type="button" class="btn-close p-3 m-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <ul class="navbar-nav d-flex align-items-start">
+                <li class="p-3"><a href="../index.html">Home</a></li>
+                <li class="p-3 d-inline" id="header__active__branding"><a href="../branding.html">Branding</a></li>
+                <li class="p-3 d-inline"><a href="../dis_grafico.html">Diseño Gráfico</a></li>
+                <li class="p-3 d-inline"><a href="../ilustracion.html">Ilustración</a></li>
+                <li class="p-3 d-inline"><a href="../sobre_mi.html">Sobre mí</a></li>
+                <li class="p-3 d-inline"><a href="../contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- fin del menu desplegable offcanvas -->
  </header>
  
  <!--EMPIEZA EL CONTENIDO-->
@@ -68,20 +99,22 @@
 
         <h4>Promesa de marca:</h4>
             <p>
-                <ul>La agencia ofrece servicios de:
-                    <li>Animación</li>
-                    <li>Videos</li>
-                    <li>Diseño de contenido</li>
-                    <li>Branding</li>
+                <ul>
+                    <p class="branding__proceso__inicio">La agencia ofrece servicios de:</p>
+                        <li>Animación</li>
+                        <li>Videos</li>
+                        <li>Diseño de contenido</li>
+                        <li>Branding</li>
                 </ul>
             </p>
 
         <h4>Visión:</h4>
             <p>
-                <ul>CUCÍ PIPÍ busca trabajar conjuntamente con los potenciales clientes para lograr:
-                    <li>Entender los desafíos y objetivos de cada proyecto, logrando una estrategia a seguir.</li>
-                    <li>Generar ideas y conceptos innovadores.</li>
-                    <li>Llevar la estrategia y creatividad a piezas comunicativas reales que conecte a cada proyecto con su público</li>
+                <ul>
+                    <p class="branding__proceso__inicio">CUCÍ PIPÍ busca trabajar conjuntamente con los potenciales clientes para lograr:</p>   
+                        <li>Entender los desafíos y objetivos de cada proyecto, logrando una estrategia a seguir.</li>
+                        <li>Generar ideas y conceptos innovadores.</li>
+                        <li>Llevar la estrategia y creatividad a piezas comunicativas reales que conecte a cada proyecto con su público</li>
                 </ul>
             </p>
 
@@ -130,16 +163,17 @@
 
     </section>
 
-    <h2>MockUps</h2>
+    
     <section class="branding__mockups">
-       
-       <div class="branding__mockups__div">
-        <img src="../assets/img/mockups/cucu_mockup1.jpg" id="cucu1" alt="cucu mockup 1">
-        <img src="../assets/img/mockups/cucu_mockup2.jpg" id="cucu2" alt="cucu mockup 2">
-        <img src="../assets/img/mockups/cucu_mockup3.jpg" id="cucu3" alt="cucu mockup 3">
-        <img src="../assets/img/mockups/cucu_mockup4.jpg" id="cucu4" alt="cucu mockup 4">
-        <img src="../assets/img/mockups/cucu_mockup5.jpg" id="cucu5" alt="cucu mockup 5">
-        <img src="../assets/img/mockups/cucu_mockup6.jpg" id="cucu6" alt="cucu mockup 6">
+        <h2>MockUps</h2>
+
+        <div class="branding__mockups__div">
+            <img src="../assets/img/mockups/cucu_mockup1.jpg" id="cucu1" alt="cucu mockup 1">
+            <img src="../assets/img/mockups/cucu_mockup2.jpg" id="cucu2" alt="cucu mockup 2">
+            <img src="../assets/img/mockups/cucu_mockup3.jpg" id="cucu3" alt="cucu mockup 3">
+            <img src="../assets/img/mockups/cucu_mockup4.jpg" id="cucu4" alt="cucu mockup 4">
+            <img src="../assets/img/mockups/cucu_mockup5.jpg" id="cucu5" alt="cucu mockup 5">
+            <img src="../assets/img/mockups/cucu_mockup6.jpg" id="cucu6" alt="cucu mockup 6">
        </div>
         
     </section>
@@ -190,6 +224,10 @@
         
     </div>
    </footer>
+
+   
+<!-- script Bootstrap -->
+<script type = "text/javascript" src="../js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
