@@ -31,7 +31,8 @@
     }
 
     #index_body{
-        h2,h3{font-size: 4rem; padding: 1% 0%;}
+        h2,h3{font-size: 4rem; padding: 1% 2%;}
+        main p{font-size: 1rem;}
     } 
 
     /*index parallax*/
@@ -39,7 +40,7 @@
         a{font-size: 2rem;}
         .parallax__section{padding: 1%, 6%; min-height: 50vh;}
     } 
-    #index_body main p{font-size: 1rem;}
+    
 
     /*Branding*/
     .brand{
@@ -81,7 +82,7 @@
     /*index*/
     h1{font-size: 6rem; margin: auto;}
     #index_body{
-        p{font-size: 1rem;}
+        main p{font-size: 1.5rem;}
         h2,h3{font-size: 4rem; padding: 1% 2%;}
     }
     }
@@ -132,13 +133,21 @@
         }
     }
 
+    footer{
+        padding: 1% 5%;
+        .footer__div__der img{width: 70%;}
+    }
+    
     #burger__icon{width: 30px; height: 30px;}
 
-    footer{padding: 1% 5%;}
-    .footer__div__der img{width: 70%;}
-
     /*index*/
+    #index_body{
+        main p{font-size: 2rem;}
+        h2, h3{font-size: 4rem; padding: 1% 2%;}
+    } 
+
     .main__presentacion{
+        font-size: 2rem;
         max-width: 90%;
         height: auto;
         min-height: 100vh;
@@ -157,10 +166,7 @@
         .main__presentacion_div_flecha{margin: auto;}
     }
     
-    #index_body{
-        p{font-size: 2rem;}
-        h2, h3{font-size: 4rem; padding: 1% 2%;}
-    } 
+    
    
     /*index parallax*/
     .parallax{
@@ -290,4 +296,5 @@
         .form__s4{margin: 5% 0%;}
       }
     }
+
 

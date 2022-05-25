@@ -371,13 +371,13 @@ button {
       text-shadow: #0d0d0d 0.2em 0.2em 0.5em; }
 
 .parallax__section__branding {
-  background-image: url(../../assets/img/parallax_branding.jpg); }
+  background-image: url(../assets/img/parallax_branding.jpg); }
 
 .parallax__section__dis {
-  background-image: url(../../assets/img/parallax_diseño_grafico.jpg); }
+  background-image: url(../assets/img/parallax_diseño_grafico.jpg); }
 
 .parallax__section__ilus {
-  background-image: url(../../assets/img/parallax_ilustracion.jpg); }
+  background-image: url(../assets/img/parallax_ilustracion.jpg); }
 
 /*BRANDING*/
 #branding_body {
@@ -1019,15 +1019,15 @@ footer {
       padding-left: 1%; }
   #index_body h2, #index_body h3 {
     font-size: 4rem;
-    padding: 1% 0%; }
+    padding: 1% 2%; }
+  #index_body main p {
+    font-size: 1rem; }
   /*index parallax*/
   .parallax a {
     font-size: 2rem; }
   .parallax .parallax__section {
     padding: 1%, 6%;
     min-height: 50vh; }
-  #index_body main p {
-    font-size: 1rem; }
   /*Branding*/
   .brand {
     padding: 0% 10%; }
@@ -1076,8 +1076,8 @@ footer {
   h1 {
     font-size: 6rem;
     margin: auto; }
-  #index_body p {
-    font-size: 1rem; }
+  #index_body main p {
+    font-size: 1.5rem; }
   #index_body h2, #index_body h3 {
     font-size: 4rem;
     padding: 1% 2%; } }
@@ -1126,15 +1126,21 @@ footer {
       width: 0px;
       height: 0px;
       font-size: 0px; }
+  footer {
+    padding: 1% 5%; }
+    footer .footer__div__der img {
+      width: 70%; }
   #burger__icon {
     width: 30px;
     height: 30px; }
-  footer {
-    padding: 1% 5%; }
-  .footer__div__der img {
-    width: 70%; }
   /*index*/
+  #index_body main p {
+    font-size: 2rem; }
+  #index_body h2, #index_body h3 {
+    font-size: 4rem;
+    padding: 1% 2%; }
   .main__presentacion {
+    font-size: 2rem;
     max-width: 90%;
     height: auto;
     min-height: 100vh;
@@ -1154,11 +1160,6 @@ footer {
       align-items: center; }
     .main__presentacion .main__presentacion_div_flecha {
       margin: auto; }
-  #index_body p {
-    font-size: 2rem; }
-  #index_body h2, #index_body h3 {
-    font-size: 4rem;
-    padding: 1% 2%; }
   /*index parallax*/
   .parallax a {
     font-size: 2rem; }
