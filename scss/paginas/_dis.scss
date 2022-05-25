@@ -1,0 +1,170 @@
+/*DISEÑO*/
+
+#dis_body{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "header header header header"
+    "acor acor acor acor"
+    "foot foot foot foot";
+}
+
+header{grid-area: header;}
+.acordeon__main{grid-area: acor;}
+footer{grid-area: foot;}
+
+
+details summary{cursor: pointer;} /*El cursor se hace pointer para el bg también :) */
+details summary>*{display: inline;}/*Hace que la flechita de desplegamiento y el texto queden en la misma linea */
+
+.acordeon__main{
+    padding: 0% 20%;
+    margin-bottom: 5%;
+
+    h1{
+        margin: 2% 0%;
+        font-size: 6rem;
+        color: #1eacd9;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 600;
+    }
+
+    ul{
+        list-style: none;
+        font-weight: 600;
+        li{
+            padding-left: 5%;
+            font-weight: 400;
+        }
+    }
+
+    summary{
+        padding: 5% 10%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 5% auto 0%;
+    }
+
+    img {width: 100%;}
+    h3{
+        font-size: 2rem;
+        color:$c-gris-blanco;
+        text-shadow: $c-gris-negro .5em 0.2em 0.3em;}
+
+    div{
+        padding: 1% 5%;
+        border-left: 5px solid $c-azul;
+        border-right:5px solid $c-azul;
+        border-bottom: 5px solid $c-azul;
+    }
+
+    /*diseno>elvis*/
+    h4{
+        margin: 2% 0%;
+        font-size: 2rem;
+        color: #1eacd9;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 600;
+    }
+}
+
+/*flecha en open y close*/
+summary{
+    list-style: none;
+    &::before{
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        content: "";
+        background-image:url(../assets/img/iconos/angle-right-solid.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:contain;
+        /*filter: invert();*/
+        padding-right: 1rem;
+    
+    }
+}
+
+details[open]{
+    summary{
+        &::before{
+            content: "";
+            background-image:url(../assets/img/iconos/angle-down-solid.svg);
+        }
+    }
+}
+
+/*diseno>elvis*/
+.elvis__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "area1 area2 area3"
+    "area1 area4 area5";
+    justify-content: center;
+    align-content: center;
+    object-fit: cover;
+    gap: 1%;
+
+    img{width: 100%; height: 100%;}
+}
+
+#elvis_grid1{grid-area: area1;}
+#elvis_grid2{grid-area: area2;}
+#elvis_grid3{grid-area: area3;}
+#elvis_grid4{grid-area: area4;}
+#elvis_grid5{grid-area: area5;}
+
+
+/*diseno>underwave*/
+
+.under__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "area1 area1 mockup1"
+    "area1 area1 mockup1"
+
+    "area2 area2 mockup2"
+    "area2 area2 mockup2"
+
+    "area3 area3 mockup3"
+    "area3 area3 mockup3"
+
+    "area4 area4 mockup4"
+    "area4 area4 mockup4"
+
+    "area5 area5 mockup5"
+    "area5 area5 mockup5"
+    
+    "area6 area6 mockup6"
+    "area6 area6 mockup6"
+    
+    "area7 area7 mockup7"
+    "area7 area7 mockup7";
+
+    justify-content: center;
+    align-content: center;
+    object-fit: cover;
+    margin: 5% 0%;
+    padding: 5% 2%;
+    gap: 1%;
+
+    img{width: 100%; height: 100%;}
+}
+
+#under_grid1{grid-area: area1;}
+#under_grid2{grid-area: area2;}
+#under_grid3{grid-area: area3;}
+#under_grid4{grid-area: area4;}
+#under_grid5{grid-area: area5;}
+#under_grid6{grid-area: area6;}
+
+#under_mockup1{grid-area: mockup1;}
+#under_mockup2{grid-area: mockup2;}
+#under_mockup3{grid-area: mockup3;}
+#under_mockup4{grid-area: mockup4;}
+#under_mockup5{grid-area: mockup5;}
+#under_mockup6{grid-area: mockup6;}
+

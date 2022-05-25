@@ -1,0 +1,67 @@
+/*BRANDING*/
+
+#branding_body{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "header header header header"
+    "brand brand brand brand"
+    "foot foot foot foot";
+}
+
+header{grid-area: header;}
+.brand{grid-area: brand;}
+footer{grid-area: foot;}
+
+
+.brand{
+    padding: 0% 20%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    h1{ color: #921ed9;
+        font-size: 6rem;
+    }
+
+    h2{ color: #921ed9;
+        font-size: 2rem;
+        margin-bottom: 5%;
+    }
+
+    section{
+        margin: 5% 0;
+        display: flex;
+        flex-direction: row;
+        img{width: 100%;}
+    }
+
+    
+    .brand__sec__img{
+        width: 40%;
+    }
+
+    .brand__sec__p{
+        width: 60%;
+        padding: 10%;
+        align-content: space-around;
+    }
+
+}
+
+
+/*grid para proyectos*/
+
+.branding_proyectos_body{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "header header header header"
+    "brand brand brand brand"
+    "branding branding branding branding"
+    "foot foot foot foot";
+}
+header{grid-area: header;}
+.branding__presentacion{grid-area: brand;}
+.branding{grid-area: branding;}
+footer{grid-area: foot;}

@@ -1,0 +1,26 @@
+/*UTILIDADES*/
+@import "utilities/var";
+
+/*GENERAL*/
+@import "general/basico";
+@import "general/header";
+@import "general/footer";
+@import "general/animaciones";
+
+
+/*PAGINAS*/
+@import "paginas/index";
+@import "paginas/branding";
+@import "paginas/dis";
+@import "paginas/ilust";
+@import "paginas/sobremi";
+@import "paginas/contacto";
+
+/*SUB-PAGINAS*/
+@import "paginas/sub_paginas/cucu";
+@import "paginas/sub_paginas/dataphone";
+@import "paginas/sub_paginas/patos";
+
+
+/*RESPONSIVE*/
+@import "responsive/estructura_media_query";

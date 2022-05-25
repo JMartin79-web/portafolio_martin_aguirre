@@ -1,0 +1,103 @@
+/*BRANDING>CUCU PIPI*/
+
+.branding__presentacion{
+    h1, h2{
+        text-align: center;
+        color: $c-violeta;
+        font-size: 6rem;
+        padding: 5% 0%;
+    }
+}
+
+.branding__presentacion__div{
+    background-color: #ffffff;
+    display: flex;
+    img{
+        padding: 0% 20%;
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+        height: 100%;
+    }
+
+}
+
+.branding{
+    padding: 0% 20%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    section{
+        margin: 0% 5%;
+        margin-bottom: 5%;
+    }
+}
+
+.branding__resumen{
+    font-size: 2rem;
+}
+
+.branding__proceso{
+    h4{
+        color: $c-violeta;
+        font-size: 2rem;
+        padding-top: 2%;
+    }
+    ul{
+        list-style: none;
+        text-decoration: none;
+        li{padding-left: 3%;}
+    }
+}
+.branding__proceso__inicio {font-size: 1.5rem; font-weight: 500;}
+
+.branding__logo__versiones{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    padding: 5%;
+    gap: 3%;
+    img{width: 100%;}
+}
+
+.branding__colores__div{
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 2%;
+    div{padding: 5% 5%;}
+}
+
+#cucu-c1{background-color: #F2858E;}
+#cucu-c2{background-color: #F24194;}
+#cucu-c3{background-color: #121236; color:$c-gris-blanco;}
+#cucu-c4{background-color: #03A696;}
+#cucu-c5{background-color: #ffffff;}
+
+
+.branding__mockups__div{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas: 
+    "area1 area1 area2"
+    "area1 area1 area4"
+    "area3 area3 area5"
+    "area6 area6 area6";
+    justify-content: center;
+    align-content: flex-start;
+    object-fit: cover;
+    overflow: hidden;
+    gap: 3%;
+    
+}
+#cucu1{grid-area: area1;}
+#cucu2{grid-area: area2;}
+#cucu3{grid-area: area3;}
+#cucu4{grid-area: area4;}
+#cucu5{grid-area: area5;}
+#cucu6{grid-area: area6;}
+
+
+.branding__mockups img{width: 100%;}
+
+

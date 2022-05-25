@@ -1,0 +1,132 @@
+
+/*ANIMACIONES*/
+
+/*ANIMACIONES>INDEX*/
+
+.parallax__button{
+    width: 140px;
+    height: 45px;
+    padding: 0%;
+    font-size: 23px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 5px;
+        height: 100%;
+        background-color: #F2F2F2;
+        z-index: -1;
+        transition: all 0.5s;
+    }
+    
+    &:hover::before {width: 100%;}
+    &:hover>a{color: #0d0d0d;text-decoration-color: #0d0d0d;transition: all 0.5s;font-weight: 600;}
+    &:active:before {background: #F2F2F2;}
+}
+
+
+/*ANIMACIONES>BRANDING*/
+
+.brand{
+    section{
+        a{
+            text-decoration: none;
+            color: #921ed9;
+            padding: auto;
+            width: 130px;
+            height: 50px;
+            padding: 14px 0x;
+            font-size: 22px;
+    }
+} 
+}
+
+.button_branding{
+    width: 130px;
+    height: 50px;
+    font-size: 22px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #921ed9;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0px;
+        height: 3px;
+        background-color: #921ed9;
+        z-index: -1;
+        transition: all 0.5s;
+       }
+    
+       &:hover::before {width: 100%;}
+}
+
+#button_branding_ajuste{width: 200px;}
+
+
+/*ANIMACIONES>ILUSTRACION*/
+
+.ilust__main__section__div{
+	display: block;
+	position: relative;
+    background-color: #1ed974;
+    overflow: hidden;
+
+    &>img{transition: 1s ease-in-out;}
+    &:hover>img{
+        opacity: 35%;
+        transform: scale(1.2);
+        filter: grayscale(100%);
+    }
+}
+
+.ilust__img__txt{
+    width: 100%;
+	height: 100%;
+	position: absolute;
+    top: 0;
+	left: 0;
+    
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+    color: #F2F2F2;
+    font-weight: 600;
+    font-size: 1.5rem;
+    opacity: 0%;
+
+    transition: all 1s;
+
+    h5{font-size: 2rem; font-family: 'Oswald', sans-serif;}
+
+    p{  padding: 0% 5%;
+        text-align: center;
+    }
+
+    &:hover{opacity: 100%;}
+}
+
+
+
+
+
+
+

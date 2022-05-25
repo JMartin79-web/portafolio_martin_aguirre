@@ -1,0 +1,72 @@
+/*SOBRE MI*/
+
+#sobre_mi_body{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "header header header header"
+    "mi mi mi mi"
+    "foot foot foot foot";
+}
+
+header{grid-area: header;}
+.mi{grid-area: mi;}
+footer{grid-area: foot;}
+
+
+.mi{
+    
+    padding: 0% 20%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+
+    h4{
+        color: #d9c61e;
+        font-size: 4rem;
+        padding-top: 1%;
+    }
+
+    ul{
+        li{padding-left: 2%;
+           list-style: none;}
+    }
+
+    .mi__main__img{
+        width: 100%;
+        height: 50vh;
+        border-bottom: 10px solid #d9c61e;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../assets/img/foto_cv_blanco_negro.png);
+    }
+
+    .mi__main__titulo{
+        color: #d9c61e;
+        font-size: 8rem;
+    }
+
+    .mi__main__titulo__subtitulo{
+        font-size: 2rem;
+        font-weight: 400;
+        font-style: italic;
+        display: block;
+        color: #F2F2F2;
+        background-color: #d9c61e;
+        padding: 0.5% 2%;
+        border-end-end-radius: 50px;
+    }
+
+
+    .mi__p_destacado{
+        font-weight: 700;
+        font-size: 1rem;
+        padding-top: 1%;
+    }
+    
+}
+
+
+

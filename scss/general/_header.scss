@@ -1,0 +1,88 @@
+/*HEADER OFFCANVAS*/
+#btn-primary__modificado {
+    --bs-btn-color: none;
+    --bs-btn-bg: none;
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: none;
+    --bs-btn-hover-bg: none;
+    --bs-btn-hover-border-color: none;
+    --bs-btn-focus-shadow-rgb: none;
+    --bs-btn-active-color: none;
+    --bs-btn-active-bg: none;
+    --bs-btn-active-border-color: none;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: none;
+    --bs-btn-disabled-bg: none;
+    --bs-btn-disabled-border-color: none;
+}
+
+#sidebar{
+    background-color: #F2F2F2;
+    a {
+        display: inline;
+        font-size: 1.5rem;
+     }
+}
+
+/*HEADER*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F2F2F2;
+    margin-top: 0px;
+    padding: 1% 20%;
+
+    nav{
+        display: inline-block;
+        width:85%;
+        flex-wrap: nowrap;
+    }
+
+    ul{
+        list-style: none;
+        text-decoration: none;
+        padding: 0%;
+        margin: 0%;
+        justify-content: space-between;
+        display: flex;
+        li{
+            a{
+                display: inline-block;
+                text-decoration: none;
+                color: #0d0d0d;
+                width: 150%;
+                height: 150%;
+                position: relative;
+                text-align: center;
+            }
+         }
+    }
+}
+
+
+#header__index__active a{font-weight:700; color: $c-rojo;}
+#header__active__branding a{font-weight:700; color: $c-violeta;}
+#header__active__dis a{font-weight:700; color: $c-azul;}
+#header__active__ilus a{font-weight:700; color: $c-verde;}
+#header__sobre_mi__active a{font-weight:700; color: $c-amarillo;}
+#header__contacto__active a{font-weight:700; color: $c-naranja;}
+
+#burger__icon{
+    width: 0px;
+    height: 0px;
+}
+
+/*HEADER>icono activo*/
+header img a {color: $c-rojo}
+
+
+
+
+
+
+
+
+
+
