@@ -7,49 +7,58 @@
         font-size: 6rem;
         padding: 5% 0%;
     }
-}
 
-.branding__presentacion__div{
-    background-color: #ffffff;
-    display: flex;
-    img{
-        padding: 0% 20%;
-        justify-content: center;
-        align-content: center;
-        margin: auto;
-        height: 100%;
+    .branding__presentacion__div{
+        background-color: #ffffff;
+        display: flex;
+        img{
+            padding: 0% 20%;
+            justify-content: center;
+            align-content: center;
+            margin: auto;
+            height: 100%;
+        }
     }
-
 }
+
+
 
 .branding{
+    @extend .branding__presentacion;
     padding: 0% 20%;
     margin: 5% auto;
     display: flex;
     flex-direction: column;
+
     section{
         margin: 0% 5%;
         margin-bottom: 5%;
     }
-}
 
-.branding__resumen{
-    font-size: 2rem;
-}
-
-.branding__proceso{
-    h4{
-        color: $c-violeta;
+    .branding__resumen{
         font-size: 2rem;
-        padding-top: 2%;
     }
-    ul{
-        list-style: none;
-        text-decoration: none;
-        li{padding-left: 3%;}
-    }
+
+    .branding__proceso{
+        h4{
+            color: $c-violeta;
+            font-size: 2rem;
+            padding-top: 2%;
+        }
+        ul{
+            list-style: none;
+            text-decoration: none;
+            li{padding-left: 3%;}
+        }
+        .branding__proceso__inicio {font-size: 1.5rem; font-weight: 500;}
+
 }
-.branding__proceso__inicio {font-size: 1.5rem; font-weight: 500;}
+
+
+
+
+}
+
 
 .branding__logo__versiones{
     display: grid;

@@ -16,7 +16,8 @@ html{
     font-size: 14px;
     scroll-behavior: smooth;
 }
-body{display: grid;background-color: #F2F2F2;}
+body{display: grid;
+    background-color: map-get($map: $map-bg-color, $key: bg-gris-blanco);}
 .logo{width: 100px; padding: 10px;}
 
 /*TITULOS*/
@@ -37,5 +38,5 @@ h1,h2,h3,h4{
     a{
         text-decoration: none;
         color: $c-violeta;
-}
+     }
 }

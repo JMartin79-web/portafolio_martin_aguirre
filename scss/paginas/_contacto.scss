@@ -76,6 +76,7 @@ footer{grid-area: foot;}
         padding: 2% 2%;
         border-top: 2px solid #d9781e;
         border-bottom: 2px solid #d9781e;
+        background-color: map-get($map: $map-bg-color, $key: bg-gris-blanco);
         &::placeholder{
             color:#d9781e;
             font-size: 115%;
@@ -111,7 +112,7 @@ footer{grid-area: foot;}
     
         textarea{
             font-weight: 500;
-            background-color: #F2F2F2;
+            background-color: map-get($map: $map-bg-color, $key: $bg-color-gris-blanco);
             width: 90%;
             height:100%;
             min-height:200px;

@@ -20,11 +20,11 @@ footer{grid-area: foot;}
     display: flex;
     flex-direction: column;
 
-    h1{ color: #921ed9;
+    h1{ color: $c-violeta;
         font-size: 6rem;
     }
 
-    h2{ color: #921ed9;
+    h2{ color: $c-violeta;
         font-size: 2rem;
         margin-bottom: 5%;
     }

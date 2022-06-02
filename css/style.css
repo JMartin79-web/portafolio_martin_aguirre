@@ -1,8 +1,10 @@
 @charset "UTF-8";
 /*UTILIDADES*/
 /*VARIABLES*/
-/*COLOR DE FONDO*/
 /*COLOR*/
+/*MAPS*/
+/*COLOR DE FONDO*/
+/*MIXINS*/
 /*GENERAL*/
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 /* Especificar familias
@@ -70,7 +72,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
   margin-top: 0px;
   padding: 1% 20%; }
   header nav {
@@ -121,10 +123,6 @@ header {
   width: 0px;
   height: 0px; }
 
-/*HEADER>icono activo*/
-header img a {
-  color: #D91E1E; }
-
 /*FOOTER*/
 footer {
   padding: 1% 20%;
@@ -132,32 +130,29 @@ footer {
 
 .footer__div {
   display: flex; }
-
-.footer__div__izq {
-  width: 50%;
-  color: #F2F2F2; }
-  .footer__div__izq h4 {
-    font-size: 2rem; }
-  .footer__div__izq img {
-    width: 30px;
-    filter: invert(100%); }
-
-.footer__div__izq__iconos {
-  justify-items: center;
-  align-items: center; }
-
-.footer__div__der {
-  width: 50%;
-  display: flex;
-  align-content: center;
-  justify-content: center; }
-  .footer__div__der a {
+  .footer__div .footer__div__izq {
+    width: 50%;
+    color: #F2F2F2; }
+    .footer__div .footer__div__izq h4 {
+      font-size: 2rem; }
+    .footer__div .footer__div__izq img {
+      width: 30px;
+      filter: invert(100%); }
+    .footer__div .footer__div__izq .footer__div__izq__iconos {
+      justify-items: center;
+      align-items: center; }
+  .footer__div .footer__div__der {
+    width: 50%;
     display: flex;
-    justify-content: flex-end; }
-  .footer__div__der img {
-    width: 25%;
-    padding: 5%;
-    object-fit: contain; }
+    align-content: center;
+    justify-content: center; }
+    .footer__div .footer__div__der a {
+      display: flex;
+      justify-content: flex-end; }
+    .footer__div .footer__div__der img {
+      width: 25%;
+      padding: 5%;
+      object-fit: contain; }
 
 /*ANIMACIONES*/
 /*ANIMACIONES>INDEX*/
@@ -428,7 +423,7 @@ footer {
 header {
   grid-area: header; }
 
-.branding__presentacion {
+.branding__presentacion, .branding {
   grid-area: brand; }
 
 .branding {
@@ -780,7 +775,8 @@ footer {
     outline: none;
     padding: 2% 2%;
     border-top: 2px solid #d9781e;
-    border-bottom: 2px solid #d9781e; }
+    border-bottom: 2px solid #d9781e;
+    background-color: #F2F2F2; }
     .form textarea::placeholder {
       color: #d9781e;
       font-size: 115%; }
@@ -806,7 +802,6 @@ footer {
     align-content: center; }
     .form .form__s4 textarea {
       font-weight: 500;
-      background-color: #F2F2F2;
       width: 90%;
       height: 100%;
       min-height: 200px;
@@ -832,16 +827,16 @@ footer {
 
 /*SUB-PAGINAS*/
 /*BRANDING>CUCU PIPI*/
-.branding__presentacion h1, .branding__presentacion h2 {
+.branding__presentacion h1, .branding h1, .branding__presentacion h2, .branding h2 {
   text-align: center;
   color: #921ed9;
   font-size: 6rem;
   padding: 5% 0%; }
 
-.branding__presentacion__div {
+.branding__presentacion .branding__presentacion__div, .branding .branding__presentacion__div {
   background-color: #ffffff;
   display: flex; }
-  .branding__presentacion__div img {
+  .branding__presentacion .branding__presentacion__div img, .branding .branding__presentacion__div img {
     padding: 0% 20%;
     justify-content: center;
     align-content: center;
@@ -856,24 +851,20 @@ footer {
   .branding section {
     margin: 0% 5%;
     margin-bottom: 5%; }
-
-.branding__resumen {
-  font-size: 2rem; }
-
-.branding__proceso h4 {
-  color: #921ed9;
-  font-size: 2rem;
-  padding-top: 2%; }
-
-.branding__proceso ul {
-  list-style: none;
-  text-decoration: none; }
-  .branding__proceso ul li {
-    padding-left: 3%; }
-
-.branding__proceso__inicio {
-  font-size: 1.5rem;
-  font-weight: 500; }
+  .branding .branding__resumen {
+    font-size: 2rem; }
+  .branding .branding__proceso h4 {
+    color: #921ed9;
+    font-size: 2rem;
+    padding-top: 2%; }
+  .branding .branding__proceso ul {
+    list-style: none;
+    text-decoration: none; }
+    .branding .branding__proceso ul li {
+      padding-left: 3%; }
+  .branding .branding__proceso .branding__proceso__inicio {
+    font-size: 1.5rem;
+    font-weight: 500; }
 
 .branding__logo__versiones {
   display: grid;
@@ -1170,8 +1161,6 @@ footer {
       margin: 0%;
       padding-bottom: 1%;
       text-align: start; }
-    .brand p {
-      font-size: 1.1rem; }
     .brand section a {
       font-size: 1.2rem; }
     .brand .brand__sec__p {
@@ -1184,9 +1173,9 @@ footer {
     padding: 0% 5%; }
     .branding section li, .branding section p {
       font-size: 1.5rem; }
-    .branding .branding__presentacion h1, .branding .branding__presentacion h2 {
+    .branding .branding__presentacion h1, .branding .branding h1, .branding .branding__presentacion h2, .branding .branding h2 {
       font-size: 4rem; }
-    .branding .branding__presentacion .branding__presentacion__div img {
+    .branding .branding__presentacion .branding__presentacion__div img, .branding .branding .branding__presentacion__div img {
       padding: 0% 0%;
       height: fit-content;
       justify-content: center;

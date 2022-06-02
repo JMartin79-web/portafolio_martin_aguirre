@@ -1,16 +1,38 @@
 /*VARIABLES*/
 
-/*COLOR DE FONDO*/
 $bg-color-rojo: background-color(#D91E1E);
+$bg-color-gris-blanco: background-color(#f2f2f2);
 
 /*COLOR*/
 $c-gris-blanco: #F2F2F2;
 $c-gris-negro:#0d0d0d;
 $c-rojo:#D91E1E;
-$c-violeta:#921ed9;;
+$c-violeta:#921ed9;
 $c-azul:#1eacd9;
 $c-verde:#1ed974;
 $c-amarillo:#d9c61e;
 $c-naranja:#d9781e;
 
 
+/*MAPS*/
+
+/*COLOR DE FONDO*/
+$map-bg-color:(
+    bg-gris-blanco: #F2F2F2,
+    bg-gris-negro:#0d0d0d,
+    bg-rojo:#D91E1E,
+    bg-violeta:#921ed9,
+    bg-azul:#1eacd9,
+    bg-verde:#1ed974,
+    bg-amarillo:#d9c61e,
+    bg-naranja:#d9781e,
+);
+
+
+/*MIXINS*/
+
+@mixin d-flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+};
