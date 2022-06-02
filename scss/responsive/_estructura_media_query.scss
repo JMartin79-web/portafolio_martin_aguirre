@@ -18,13 +18,12 @@
     .main__presentacion{
         max-width: 90%;
         height: auto;
-        min-height: 100vh;
+        min-height: 80vh;
         text-align: start;
         justify-content: center;
         align-items: center;
         
         .main__presentacion__loop{margin-right: 5%;}
-
         .main__presentacion__div{
             p{padding-left: 1%;}
         } 
@@ -85,7 +84,33 @@
         main p{font-size: 1.5rem;}
         h2,h3{font-size: 4rem; padding: 1% 2%;}
     }
+
+    .main__presentacion{
+        font-size: 2rem;
+        max-width: 90%;
+        height: auto;
+        min-height: 100vh;
+        display: block;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        h1{font-size: 8rem; margin: auto;}
+        .main__presentacion__loop{width: 80%; margin:auto}
+        .main__presentacion__div{
+            width: 100%;
+            margin: auto;
+            padding: 2%;
+            align-items: center; 
+        }
+        .main__presentacion_div_flecha{margin: auto;}
     }
+    
+    /*index parallax*/
+    .parallax{
+        a{font-size: 2rem;}
+        .parallax__section{padding: 1%, 6%; min-height: 50vh;}
+    } 
+    
 
     /*contacto*/
     .contact__main{padding: 5% 10%;}
@@ -117,7 +142,7 @@
         }
     }
      
-
+}
 
 
 /*MOBILE*/
@@ -141,40 +166,12 @@
     #burger__icon{width: 30px; height: 30px;}
 
     /*index*/
-    #index_body{
-        main p{font-size: 2rem;}
-        h2, h3{font-size: 4rem; padding: 1% 2%;}
-    } 
-
     .main__presentacion{
-        font-size: 2rem;
-        max-width: 90%;
-        height: auto;
         min-height: 100vh;
-        display: block;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        h1{font-size: 8rem; margin: auto;}
         .main__presentacion__loop{width: 100%;}
-        .main__presentacion__div{
-            width: 100%;
-            margin: auto;
-            padding: 2%;
-            align-items: center; 
-        }
-        .main__presentacion_div_flecha{margin: auto;}
     }
     
-    
-   
-    /*index parallax*/
-    .parallax{
-        a{font-size: 2rem;}
-        .parallax__section{padding: 1%, 6%; min-height: 50vh;}
-    } 
-
-
+        
     /*Branding*/
     .brand{
         padding: 0% 2%;
@@ -275,6 +272,7 @@
 
 
     /*contacto*/
+
     .contact__main{
         padding: 5% 5%;
         .contact__main__contactos {margin: 5% 5%}
@@ -296,5 +294,6 @@
         .form__s4{margin: 5% 0%;}
       }
     }
+
 
 
