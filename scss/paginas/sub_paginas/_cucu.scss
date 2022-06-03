@@ -54,9 +54,6 @@
 
 }
 
-
-
-
 }
 
 
@@ -96,8 +93,9 @@
     align-content: flex-start;
     object-fit: cover;
     overflow: hidden;
-    gap: 3%;
-    
+    width: 100%;
+
+    img{padding: 1.5%;}
 }
 #cucu1{grid-area: area1;}
 #cucu2{grid-area: area2;}
