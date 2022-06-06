@@ -53,8 +53,9 @@ footer{grid-area: foot;}
 /*grid para proyectos*/
 
 .branding_proyectos_body{
+    width: 100vw;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
     grid-template-areas:
     "header header header header"
     "brand brand brand brand"
