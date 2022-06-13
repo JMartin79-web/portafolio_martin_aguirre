@@ -687,7 +687,8 @@ footer {
     padding-top: 1%; }
   .mi ul li {
     padding-left: 2%;
-    list-style: none; }
+    list-style: none;
+    font-size: 1.5rem; }
   .mi .mi__main__img {
     width: 100%;
     height: 65vh;
@@ -711,7 +712,7 @@ footer {
     border-end-end-radius: 50px; }
   .mi .mi__p_destacado {
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding-top: 1%; }
 
 /*CONTACTOS*/
@@ -1221,7 +1222,7 @@ footer {
   .mi {
     padding: 0% 5%;
     flex-wrap: wrap; }
-    .mi li, .mi p {
+    .mi p {
       font-size: 1.5rem; }
     .mi .mi__main__titulo h1 {
       font-size: 4.5rem; }

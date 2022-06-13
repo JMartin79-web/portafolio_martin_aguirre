@@ -15,12 +15,12 @@ footer{grid-area: foot;}
 
 
 .mi{
-    
+
     padding: 0% 20%;
     margin-bottom: 5%;
     display: flex;
     flex-direction: column;
-
+    
     h4{
         color: #d9c61e;
         font-size: 4rem;
@@ -29,7 +29,8 @@ footer{grid-area: foot;}
 
     ul{
         li{padding-left: 2%;
-           list-style: none;}
+           list-style: none;
+           font-size: 1.5rem;}
     }
 
     .mi__main__img{
@@ -62,7 +63,7 @@ footer{grid-area: foot;}
 
     .mi__p_destacado{
         font-weight: 700;
-        font-size: 1rem;
+        font-size: 1.5rem;
         padding-top: 1%;
     }
     
