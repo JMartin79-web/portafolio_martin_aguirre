@@ -123,28 +123,20 @@ footer{grid-area: foot;}
     }
     
     .form__s5{
-        input{
-            cursor: pointer;
-            margin: auto;
-            font-family: 'Oswald', sans-serif;
-            font-size: 1.5rem;
-            color: #F2F2F2;
-            margin: 50% auto;
-            background-color: #d9781e;
-            padding: 10% 20%;
-            text-align: center;
-            justify-items: center;
-            align-items: center;
-            align-self: center;
+        button{
+            background:#d9781e;
             transition: all 1s;
-    
+            border-radius: 10px;
+            a{
+                font-family: 'Oswald', sans-serif;
+                font-size: 1.5rem;
+                text-decoration: none;
+                color: #F2F2F2;
+            }
+
             &:focus{
                 background-color: #1ed974;
-                transform: scale(1.2);
-            }
-         }
+                transform: scale(1.2);}
+        }   
     }
-    
-
-
 }

@@ -809,21 +809,16 @@ footer {
       min-height: 200px;
       margin: auto 5%;
       resize: none; }
-  .form .form__s5 input {
-    cursor: pointer;
-    margin: auto;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.5rem;
-    color: #F2F2F2;
-    margin: 50% auto;
-    background-color: #d9781e;
-    padding: 10% 20%;
-    text-align: center;
-    justify-items: center;
-    align-items: center;
-    align-self: center;
-    transition: all 1s; }
-    .form .form__s5 input:focus {
+  .form .form__s5 button {
+    background: #d9781e;
+    transition: all 1s;
+    border-radius: 10px; }
+    .form .form__s5 button a {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: #F2F2F2; }
+    .form .form__s5 button:focus {
       background-color: #1ed974;
       transform: scale(1.2); }
 
